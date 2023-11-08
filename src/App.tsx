@@ -2,6 +2,7 @@
 // import MuiTextField from "./components/MuiTextField/MuiTextField";
 
 // import { MuiResponsiveness } from "./components/MuiResponsiveness/MuiResponsiveness";
+
 import { Box, colors, createTheme, ThemeProvider } from "@mui/material";
 import SimpleContainer from "./components/Container/Container";
 
@@ -17,6 +18,13 @@ declare module "@mui/material/styles" {
     laptop: true;
     desktop: true;
   }
+}
+
+interface SimplePaletteColorOptions {
+  light?: string;
+  main: string;
+  dark?: string;
+  contrastText?: string;
 }
 
 // import ResponsiveStack from "./components/ResponsStack/ResponsStack";
